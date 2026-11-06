@@ -11,12 +11,12 @@ body {
 button {
   padding: 16px 28px;
   border: 0;
-  border-radius: 24px;
-  background: #c8102e;
-  color: white;
-  font-size: 20px;
+  border-radius: 100px;
+  background: #770014;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
   cursor: pointer;
-}
+} 
 
 button:hover {
   background: #a30d26;
