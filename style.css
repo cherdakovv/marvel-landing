@@ -26,3 +26,89 @@ button:focus-visible {
   outline: 3px solid #fbbf24;
   outline-offset: 4px;
 }
+
+/* Оформление сайта Marvel */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  background: #0d0d12;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Основной блок теста */
+
+.quiz {
+  width: 100%;
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 35px 25px;
+  box-sizing: border-box;
+  background: #191923;
+  border: 1px solid #a40020;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(230, 0, 45, 0.2);
+}
+
+.quiz h2 {
+  color: #ff2449;
+  font-size: 32px;
+}
+
+.quiz p {
+  color: #dddddd;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Кнопки */
+
+button {
+  color: white;
+  background: #c40028;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff2449;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(255, 36, 73, 0.4);
+}
+
+/* Варианты ответов */
+
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.answer-button {
+  font-size: 17px;
+  min-height: 75px;
+}
+
+/* Адаптация для телефона */
+
+@media (max-width: 600px) {
+  .answers {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz h2 {
+    font-size: 25px;
+  }
+}
