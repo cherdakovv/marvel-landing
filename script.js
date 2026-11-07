@@ -4,7 +4,7 @@ console.log("[Щ.И.Т.] Допуск 67. Пасхалка найдена: +100 
 const button = document.querySelector("#main-button");
 
 function handleClick() {
-  button.textContent = "Мстители в сборе!";
+  button.textContent = "Команда готова к миссии!";
 }
 
 button.addEventListener("click", handleClick);
